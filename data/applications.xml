@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<applications>
+
+    <development>
+    
+        <text_editors>
+
+            <text_editor 
+                name="Atom"
+                description="A hackable text editor for the 21st Century"
+                comment="Really appreciated by a lot of people, but I think that Visual Studio Code is just way better."
+                url="https://atom.io"
+                paid="false"
+            >
+                <pacman install="pacman -Syu atom" delete="pacman -R atom"/>
+                <snap install="snap install atom --classic" delete="snap remove atom"/>
+
+            </text_editor>
+
+
+            <text_editor 
+                name="Gedit"
+                description="Text editor of the GNOME desktop environment"
+                comment="Lightweight and fast to open, it's my editor for on-the-go edits."
+                url="https://wiki.gnome.org/Apps/Gedit"
+                paid="false"
+            >
+                <pacman install="pacman -Syu gedit" delete="pacman -R gedit"/>
+                <snap install="snap install gedit" delete="snap remove gedit"/>
+            </text_editor>
+
+
+            <text_editor 
+                name="Visual Studio Code"
+                description="Code editing. Redefined."
+                comment="Awesome compromise between a text editor and a heavy IDE. Improved by a huge number a plugins."
+                paid="false"
+            >
+                <snap install="snap install code --classic" delete="snap remove code"/>
+            </text_editor>
+        
+        </text_editors>
+
+
+            
+        <jetbrains_ides>
+
+            <jetbrains_ide
+                name="Android Studio"
+                description="The IDE for Android"
+                comment="Must-have for Android development. Awesome but heavy (like every JetBrain tool ever)."
+                url="https://developer.android.com/studio"
+                paid="false"
+            >
+                <snap install="snap install android-studio --classic" delete="snap remove android-studio"/>
+            </jetbrains_ide>
+
+
+            <jetbrains_ide 
+                name="Clion"
+                description="A cross-platform IDE for C and C++"
+                comment="The best IDE for C and C++. Awesome but heavy (like every JetBrain tool ever)."
+                url="https://www.jetbrains.com/clion/"
+                paid="true"
+            >
+                <snap install="snap install clion --classic" delete="snap remove clion"/>
+            </jetbrains_ide>
+
+
+            <jetbrains_ide 
+                name="DataGrip"
+                description="Many databases, one tool"
+                comment="I never tried it."
+                url="https://www.jetbrains.com/datagrip/"
+                paid="true"
+            >
+                <snap install="snap install datagrip --classic" delete="snap remove datagrip"/>
+            </jetbrains_ide>
+
+
+            <jetbrains_ide 
+                name="GoLand"
+                description="A Clever IDE to Go"
+                comment="I never tried it."
+                url="https://www.jetbrains.com/go/"
+                paid="true"
+            >
+                <snap install="snap install goland --classic" delete="snap remove goland"/>
+            </jetbrains_ide>
+
+            
+            <jetbrains_ide 
+                name="IntelliJ IDEA Community"
+                description="Capable and Ergonomic Java IDE"
+                comment="Java sucks less with it. Awesome but heavy (like every JetBrain tool ever), but even heavier since it's Java. Free version, but with less features."
+                url="https://www.jetbrains.com/idea/"
+                paid="false"
+            >
+                <snap install="snap install intellij-idea-community --classic" delete="snap remove intellij-idea-community"/>
+            </jetbrains_ide>
+
+
+            <jetbrains_ide 
+                name="IntelliJ IDEA Ultimate"
+                description="Capable and Ergonomic Java IDE for Entreprise, Web and Mobile Development"
+                comment="Java sucks less with it. Awesome but heavy (like every JetBrain tool ever), but even heavier since it's Java."
+                url="https://www.jetbrains.com/idea/"
+                paid="true"
+            >
+                <snap install="snap install intellij-idea-ultimate --classic" delete="snap remove intellij-idea-ultimate"/>
+            </jetbrains_ide>
+
+
+            <jetbrains_ide 
+                name="PhpStorm"
+                description="The Lightning-Smart PHP IDE"
+                comment="I never tried it."
+                url="https://www.jetbrains.com/phpstorm/"
+                paid="true"
+            >
+                <snap install="snap install phpstorm --classic" delete="snap remove phpstorm"/>
+            </jetbrains_ide>
+
+
+            <jetbrains_ide 
+                name="Pycharm Community"
+                description="The most intelligent Python IDE"
+                comment="Awesome but heavy (like every JetBrain tool ever). Free version, but with less features."
+                url="https://www.jetbrains.com/pycharm/"
+                paid="true"
+            >
+                <pacman install="pacman -Syu atom" delete="pacman -R atom"/>
+                <snap install="snap install pycharm-community --classic" delete="snap remove pycharm-community"/>
+            </jetbrains_ide>
+
+
+            <jetbrains_ide 
+                name="Pycharm Pro"
+                description="The Python IDE for Professional Developers"
+                comment="Awesome but heavy (like every JetBrain tool ever)."
+                url="https://www.jetbrains.com/pycharm/"
+                paid="true"
+            >
+                <snap install="snap install pycharm-professional --classic" delete="snap remove pycharm-professional"/>
+            </jetbrains_ide>
+
+
+            <jetbrains_ide 
+                name="Rider"
+                description="Fast and powerful cross-platform .NET IDE"
+                comment="I never tried it."
+                url="https://www.jetbrains.com/rider/"
+                paid="true"
+            >
+                <snap install="snap install rider --classic" delete="snap remove rider"/>
+            </jetbrains_ide>
+
+
+            <jetbrains_ide 
+                name="RubyMine"
+                description="The Most Intelligent Ruby and Rails IDE"
+                comment="I never tried it."
+                url="https://www.jetbrains.com/ruby/"
+                paid="true"
+            >
+                <snap install="snap install rubymine --classic" delete="snap remove rubymine"/>
+            </jetbrains_ide>
+
+
+            <jetbrains_ide 
+                name="WebStorm"
+                description="The smartest JavaScript IDE "
+                comment="Works fine, but VSCode is free, lighter and almost as good."
+                url="https://www.jetbrains.com/webstorm/"
+                paid="true"
+            >
+                <snap install="snap install webstorm --classic" delete="snap remove webstorm"/>
+            </jetbrains_ide>
+
+        </jetbrains_ides>
+
+    </development>
+
+</applications>
