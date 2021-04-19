@@ -80,7 +80,7 @@ After starting the app, dotstar will successively ask you if you want it to effe
     - [Dolphin](https://apps.kde.org/dolphin/)
     - [Nautilus](https://wiki.gnome.org/Apps/Files)
 
- - **Graphisme**
+ - **Graphisme tools**
     - [draw.io desktop](https://github.com/jgraph/drawio-desktop)
     - [Gcolor3](https://www.hjdskes.nl/projects/gcolor3/)
     - [GIMP](https://www.gimp.org)
@@ -122,8 +122,8 @@ After starting the app, dotstar will successively ask you if you want it to effe
 
 
 ### Supported package managers
-- [ ] Pacman
-- [ ] Snap
+- [X] Pacman
+- [X] Snap
 - [ ] Flatpak
 - [ ] APT
 - [ ] YUM
