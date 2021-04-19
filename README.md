@@ -92,7 +92,6 @@ After starting the app, dotstar will successively ask you if you want it to effe
 - **Productivity & office tools**
     - [FreeOffice](https://www.freeoffice.com/en/)
     - [LibreOffice](https://www.libreoffice.org/)
-    - [Okular](https://okular.kde.org)
     - [Toggl Track](https://www.toggl.com/track/)
     - [SimpleNote](https://simplenote.com)
 
@@ -102,7 +101,7 @@ After starting the app, dotstar will successively ask you if you want it to effe
 
 - **System tools**
     - [Filelight](https://apps.kde.org/filelight/)
-    - [Gnome System Monitor](https://wiki.gnome.org/Apps/SystemMonitor)
+    - [Gnome System Monitor](https://wiki.gnome.org/Apps/SystemMonitor/)
     - [Timeshift](https://github.com/teejee2008/timeshift)
 
 - **Terminal emulators**
@@ -112,7 +111,6 @@ After starting the app, dotstar will successively ask you if you want it to effe
 - **Web browsers**
     - [Chromium](https://www.chromium.org/Home)
     - [Firefox](https://www.mozilla.org/en-US/firefox/new/)
-    - [Google Chrome](https://www.google.fr/chrome/)
     - [Tor Browser](https://www.torproject.org/)
 
 - **Other apps**
@@ -127,7 +125,6 @@ After starting the app, dotstar will successively ask you if you want it to effe
 - [ ] Flatpak
 - [ ] APT
 - [ ] YUM
-- [ ] Zypper
 
 
 
