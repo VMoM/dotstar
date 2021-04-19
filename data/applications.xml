@@ -129,7 +129,7 @@
                 url="https://www.jetbrains.com/pycharm/"
                 paid="true"
             >
-                <pacman install="pacman -Syu atom" delete="pacman -R atom"/>
+                <pacman install="pacman -Syu pycharm-community" delete="pacman -R pycharm-community"/>
                 <snap install="snap install pycharm-community --classic" delete="snap remove pycharm-community"/>
             </jetbrains_ide>
 
@@ -180,5 +180,72 @@
         </jetbrains_ides>
 
     </development>
+
+
+    <file_managers>
+        <file_manager
+            name="Dolphin"
+            description="The file explorer KDE"
+            comment="I consider Nautilus more intuitive."
+            url="https://apps.kde.org/dolphin/"
+            paid="false"
+        >
+            <pacman install="pacman -Syu dolphin" delete="pacman -Syu dolphin"/>
+        </file_manager>
+
+        <file_manager
+            name="Nautilus"
+            description="File explorer of the GNOME desktop environment"
+            comment="My favorite file explorer. Simple, intuitive, beautiful."
+            url="https://wiki.gnome.org/Apps/Files"
+            paid="false"
+        >
+            <pacman install="pacman -Syu nautilus" delete="pacman -R nautilus"/>
+        </file_manager>
+    </file_managers>
+
+    <graphisme_tools>
+        <graphism_tool
+            name="draw.io desktop"
+            description="Official electron build of diagrams.net"
+            comment="Useful for offline use of diagrams.net (a simple tool to create simple diagrams)."
+            url="https://github.com/jgraph/drawio-desktop"
+            paid="false"
+        >
+            <snap install="snap install drawio" delete="snap remove drawio"/>
+        </graphism_tool>
+
+        <graphism_tool
+            name="Gcolor3"
+            description="Pick colors from the selector or the screen. A.K.A Color Picker."
+            comment="Useful for picking colors from everywhere."
+            url="https://www.hjdskes.nl/projects/gcolor3/"
+            paid="false"
+        >
+            <pacman install="pacman -Syu gcolor3" delete="pacman -R gcolor3"/>
+        </graphism_tool>
+
+        <graphism_tool
+            name="GIMP"
+            description="Create images and modify pictures"
+            comment="Hard to learn. Hard to master. No compromise, just power."
+            url="https://www.gimp.org"
+            paid="false"
+        >
+            <pacman install="pacman -Syu gimp" delete="pacman -R gimp"/>
+            <snap install="snap install gimp" delete="snap remove gimp"/>
+        </graphism_tool>
+
+        <graphism_tool
+            name="Shotwell"
+            description="Create images and modify pictures"
+            comment="Nice to view images and crop them."
+            url="https://wiki.gnome.org/Apps/Shotwell"
+            paid="false"
+        >
+            <pacman install="pacman -Syu shotwell" delete="pacman -R shotwell"/>
+        </graphism_tool>
+    </graphisme_tools>
+
 
 </applications>
