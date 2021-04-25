@@ -35,7 +35,7 @@ dotstar is currently under development, so **it is UNUSABLE**. Come back later! 
 
     - You're just a classic user looking for awesome apps and a fast rocking of the look of your DE? You're in the right place too.
 
-- dotstar uses subcategories, so for exemple it will ask you if you want some development tools, then if you want some text editors, then for each text editor if you want to install it. 
+- dotstar uses categories, so for exemple it will ask you if you want some text editors, then for each text editor if you want to install it. 
 
 *The speed will of course depend on of your connexion if you choose to install heavy apps.
 
