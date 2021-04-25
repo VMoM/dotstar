@@ -195,16 +195,6 @@
 
 
     <graphism
-        name="draw.io desktop"
-        description="Official electron build of diagrams.net"
-        comment="Useful for offline use of diagrams.net (a simple tool to create simple diagrams)."
-        url="https://github.com/jgraph/drawio-desktop"
-        paid="false"
-    >
-        <snap install="snap install drawio" delete="snap remove drawio"/>
-    </graphism>
-
-    <graphism
         name="Gcolor3"
         description="Pick colors from the selector or the screen. A.K.A Color Picker."
         comment="Useful for picking colors from everywhere."
