@@ -45,14 +45,10 @@ dotstar is currently under development, so **it is UNUSABLE**. Come back later! 
 After starting the app, dotstar will successively ask you if you want it to effectuate the proposed action.
 
 - Accept an action with `y` (for *yes*), decline with `n` (for *no*).
+  
+- You don't understand what the tool is asking? Answer `-h` (for *help*) to get some help (unavailable for now).
 
-- You don't know what is the app propose you to install? Answer `-w` (for *what is that*) to get a description.
-
-- You don't understand what the tool is asking? Answer `-h` (for *help*) to get some help.
-
-- You want to see which command will be run if you accept? Answer `-c` (for *command*) to see it.
-
-- You miss clic your last answer? Don't panic: answer `-p` (for *previous*) to reverse the last action and then return to it.
+- You miss clic your last answer? Don't panic: answer `-p` (for *previous*) to reverse the last action and then return to it (unavailable for now).
 
 
 
@@ -81,7 +77,6 @@ After starting the app, dotstar will successively ask you if you want it to effe
     - [Nautilus](https://wiki.gnome.org/Apps/Files)
 
  - **Graphisme tools**
-    - [draw.io desktop](https://github.com/jgraph/drawio-desktop)
     - [Gcolor3](https://www.hjdskes.nl/projects/gcolor3/)
     - [GIMP](https://www.gimp.org)
     - [Shotwell](https://wiki.gnome.org/Apps/Shotwell)
