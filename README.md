@@ -37,7 +37,7 @@ dotstar is currently under development, so **it is UNUSABLE**. Come back later! 
 
 - dotstar uses categories, so for exemple it will ask you if you want some text editors, then for each text editor if you want to install it. 
 
-*The speed will of course depend on of your connexion if you choose to install heavy apps.
+*The speed will of course will depend on your connection speed if you choose to install heavy apps.
 
 
 
