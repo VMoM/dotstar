@@ -1,6 +1,9 @@
 import os
 from typing import Dict
 
+from colorama import Fore  # for colors of the output
+from constants import DESCRIPTION_COLOR, QUESTION_COLOR, ERROR_COLOR
+
 
 class Application:
     """
@@ -26,16 +29,16 @@ class Application:
 
     def print_informations(self) -> None:
         """
-        Print all the informations about the app
+        Print all the informations about the app.
         """
-        print("Application name:", self.name)
-        print("Description:", self.description)
-        print("Comment:", self.comment)
-        print("URL:", self.url)
-        print("Paid:", self.paid)
+        print(DESCRIPTION_COLOR + "Application name: " + Fore.RESET + self.name)
+        print(DESCRIPTION_COLOR + "Description: " + Fore.RESET + self.description)
+        print(DESCRIPTION_COLOR + "Comment: " + Fore.RESET + self.comment)
+        print(DESCRIPTION_COLOR + "URL: " + Fore.RESET + self.url)
+        print(DESCRIPTION_COLOR + "Paid: " + Fore.RESET + str(self.paid))
 
         # print all the possibles pm inline
-        print("Supported package managers: ", end="")
+        print(Fore.MAGENTA + "Supported package managers: " + Fore.RESET, end="")
         for possible_pm in self.installation_commands.keys():
             print(possible_pm, end=" ")
         print()
@@ -45,29 +48,54 @@ class Application:
         Ask to the user if they want to install the applications
         :return: if the user wants to install the applications
         """
-        install = input("Do you want to install " + self.name + "? (y/N) ")
-        return install in ("y", "Y")
+        install_application_choice = input(
+            QUESTION_COLOR
+            + "Do you want to install " + self.name + "? (y/N): "
+            + Fore.RESET
+        )
+        return install_application_choice in ("y", "Y")
 
-    def install(self) -> None:
+    def install(self, usable_pms: set[str]) -> None:
         """
         Install the applications after asking to the user which PM use
         """
-        possibles_pm = list(self.installation_commands.keys())
+        possibles_pm = list(set(self.installation_commands.keys()) & usable_pms)
 
-        # getting the wanted PM
+        # getting the wanted PM by printing the list of possibles PM and asking which use
         choice = 0
         while not 1 <= choice <= len(possibles_pm):
-            print("Which package manager do you want to use?")
-            for i in range(len(possibles_pm)):
-                print("%d : %s" % (i+1, possibles_pm[i]))
-            choice = input("Enter the corresponding number (-1 to cancel the installation): ")
-
-            if not (choice.isnumeric() and 1 <= int(choice) <= len(possibles_pm)):
-                print("Error: please enter a number between %d and %d" % (1, len(possibles_pm)))
-            elif choice == "-1":
+            print(DESCRIPTION_COLOR, "Possible package managers:")
+            for index in range(len(possibles_pm)):
+                print(
+                    DESCRIPTION_COLOR
+                    + str(index + 1) + ": "
+                    + Fore.RESET
+                    + possibles_pm[index]
+                )
+            choice = input(
+                QUESTION_COLOR
+                + "Enter the number of the package manager you want to use (-1 to cancel the installation): "
+                + Fore.RESET
+            )
+            if choice == "-1":
+                print(
+                    ERROR_COLOR
+                    + "Installation canceled"
+                    + Fore.RESET
+                )
                 return
-        pm = possibles_pm[int(choice) - 1]
+            elif not (choice.isnumeric() and 1 <= int(choice) <= len(possibles_pm)):
+                print(
+                    ERROR_COLOR
+                    + "Error: please enter a number between %d and %d" % (1, len(possibles_pm))
+                    + Fore.RESET
+                )
+                choice = 0
+            else:
+                choice = int(choice)
+        pm = possibles_pm[choice - 1]
 
+        print("Installation with " + pm + ":")
         command = self.installation_commands.get(pm)
         os.system(command)
 

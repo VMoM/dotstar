@@ -1,22 +1,33 @@
+from colorama import Fore  # for colors of the output
+
 from readers import read_application_store
-from res import get_res
+from applications.utilities import get_usable_pms
+from res import get_absolute_res_path
+from constants import QUESTION_COLOR, HASH_COLOR
 
 
 def main() -> None:
 
     # Application part
-    print("Do you want to install applications?")
-    install_applications = input("Your answer (y/N): ") in ("y", "Y")
-    if install_applications:
-        application_store = read_application_store(get_res("applications.xml"))
+    install_applications_choice = input(
+        QUESTION_COLOR
+        + "Do you want to install applications? (y/N): "
+        + Fore.RESET
+    )
+    if install_applications_choice in ("y", "Y"):
+        application_store = read_application_store(get_absolute_res_path("applications.xml"))
 
+        usable_pms = get_usable_pms()
         for category_name in application_store:
             for application in application_store[category_name]:
-                print("##################################################")
+                print(HASH_COLOR + "##################################################" + Fore.RESET)
                 application.print_informations()
                 install_it = application.ask_for_installation()
                 if install_it:
-                    application.install()
+                    application.install(usable_pms)
+
+        print(HASH_COLOR + "##################################################" + Fore.RESET)
+        print("End of the installation part.")
 
     # Apparence part
     # (WIP)
