@@ -1,9 +1,10 @@
+import os  # for getting the DE
 from colorama import Fore  # for colors of the output
 
 from readers import read_application_store
 from applications.utilities import get_usable_pms
 from res import get_absolute_res_path
-from constants import QUESTION_COLOR, HASH_COLOR
+from constants import QUESTION_COLOR, HASH_COLOR, SUPPORTED_DE
 
 
 def main() -> None:
@@ -30,7 +31,13 @@ def main() -> None:
         print("End of the installation part.")
 
     # Apparence part
-    # (WIP)
+    user_de = os.environ["DESKTOP_SESSION"]
+    if user_de in SUPPORTED_DE and input(
+        QUESTION_COLOR
+        + "Your desktop environment is compatible with the customization. Do you want to customize it? (y/N): "
+        + Fore.RESET
+    ) in ("Y", "y"):
+        print("WIP")
 
 
 if __name__ == "__main__":
