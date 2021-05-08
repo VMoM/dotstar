@@ -1,10 +1,8 @@
-import os
-from typing import Dict
-
-from colorama import Fore  # for colors of the output
-from constants import DESCRIPTION_COLOR, QUESTION_COLOR, ERROR_COLOR
-
 from typing import Optional
+from colorama import Fore  # for colors of the output
+
+from constants import DESCRIPTION_COLOR, QUESTION_COLOR, ERROR_COLOR
+from applications.package_manager import PackageManager
 
 
 class Application:
@@ -18,7 +16,7 @@ class Application:
             comment: str,
             url: str,
             paid: bool,
-            pms: Dict[str, str]
+            pms: dict[PackageManager, str]
     ) -> None:
         self.name = name
         self.description = description
@@ -40,7 +38,7 @@ class Application:
         # print all the possibles pm inline
         print(Fore.MAGENTA + "Supported package managers: " + Fore.RESET, end="")
         for possible_pm in self.pms.keys():
-            print(possible_pm, end=" ")
+            print(possible_pm.system_name, end=" ")
         print()
 
     def ask_for_installation(self) -> bool:
@@ -55,12 +53,12 @@ class Application:
         )
         return install_application_choice in ("y", "Y")
 
-    def ask_pm(self, usable_pms: set[str]) -> Optional[str]:
+    def ask_pm(self, usable_pms: dict[str, PackageManager]) -> Optional[PackageManager]:
         """
-        Ask to the user witch pm use for the installation
-        :return: the pm to use, or None if cancel
+        Ask to the user witch PM use for the installation
+        :return: the PM to use, or None if cancel
         """
-        possibles_pm = list(set(self.pms.keys()) & usable_pms)
+        possibles_pm = list(set(self.pms.keys()) & set(usable_pms.values()))
         choice = 0
 
         while not 1 <= choice <= len(possibles_pm):
@@ -70,7 +68,7 @@ class Application:
                     DESCRIPTION_COLOR
                     + str(index + 1) + ": "
                     + Fore.RESET
-                    + possibles_pm[index]
+                    + possibles_pm[index].system_name
                 )
             choice = input(
                 QUESTION_COLOR

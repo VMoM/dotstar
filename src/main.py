@@ -1,7 +1,6 @@
 import os  # for getting the DE
-import colorama  # for colors of the output
+import colorama  # for colors with print() and input()
 
-import readers
 import applications.utilities as app_utils
 import res
 import constants
@@ -16,7 +15,7 @@ def main() -> None:
         + colorama.Fore.RESET
     )
     if install_applications_choice in ("y", "Y"):
-        application_store = readers.read_application_store(res.get_absolute_res_path("applications.json"))
+        application_store = app_utils.read_application_store(res.get_absolute_res_path("applications.json"))
 
         usable_pms = app_utils.get_usable_pms()
         installation_dict = app_utils.create_installation_dict(usable_pms)
