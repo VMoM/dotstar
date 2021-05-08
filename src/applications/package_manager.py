@@ -10,13 +10,16 @@ class PackageManager:
             self,
             dotstar_name: str,
             system_name: str,
-            command_shape: str
+            command_shape: str,
+            multiple_apps_query_support: bool
     ) -> None:
         """
         :param dotstar_name: the name of the PM that dotstar uses
         :param system_name: the name of the PM that the OS uses
         :param command_shape: the shape of the command. Must have a %s placeholder
+        :param multiple_apps_query_support: if the PM supports query with multiple names (like "pacman -Sy atom gedit")
         """
         self.dotstar_name = dotstar_name
         self.system_name = system_name
         self.command_shape = command_shape
+        self.multiple_apps_query_support = multiple_apps_query_support

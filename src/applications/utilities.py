@@ -80,7 +80,13 @@ def install_apps(installation_dict: dict[PackageManager, list[str]]) -> None:
     :param installation_dict: a dict with usable PackageManager as key and a list of application names as value
     """
     for pm in installation_dict.keys():
-        for app_name in installation_dict[pm]:
-            command = pm.command_shape % app_name
+        if pm.multiple_apps_query_support and len(installation_dict[pm]) > 0:
+            all_apps_to_install = " ".join(installation_dict[pm])
+            command = pm.command_shape % all_apps_to_install
             print("The following installation command will be executed: " + command)
             os.system(command)
+        else:
+            for app_name in installation_dict[pm]:
+                command = pm.command_shape % app_name
+                print("The following installation command will be executed: " + command)
+                os.system(command)
