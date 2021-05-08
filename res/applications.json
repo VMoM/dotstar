@@ -6,13 +6,9 @@
       "comment": "Really appreciated by a lot of people, but I think that Visual Studio Code is just way better.",
       "url": "https://atom.io",
       "paid": false,
-      "supported_de": ["pacman", "snap"],
-      "pacman": {
-        "name":"atom"
-      },
-      "snap": {
-        "name": "atom",
-        "classic": true
+      "PMs": {
+        "pacman": "atom",
+        "snap classic": "atom"
       }
     },
     {
@@ -21,13 +17,9 @@
       "comment": "Lightweight and fast to open, it's my editor for on-the-go edits.",
       "url": "https://wiki.gnome.org/Apps/Gedit",
       "paid": false,
-      "supported_de": ["pacman", "snap"],
-      "pacman": {
-        "name": "gedit"
-      },
-      "snap": {
-        "name": "gedit",
-        "classic": false
+      "PMs": {
+        "pacman": "gedit",
+        "snap sandbox": "gedit"
       }
     },
     {
@@ -36,25 +28,21 @@
       "comment": "Awesome compromise between a text editor and a heavy IDE. Improved by a huge number a plugins.",
       "url": "https://code.visualstudio.com",
       "paid": false,
-      "supported_de": ["snap"],
-      "snap": {
-        "name": "code",
-        "classic": true
+      "PMs": {
+        "snap classic": "code"
       }
     }
   ],
 
-  "JetBrains IDEs": [
+  "JetBrains IPMs": [
     {
       "name": "Android Studio",
       "description": "The IDE for Android",
       "comment": "Must-have for Android development. Awesome but heavy (like every JetBrain tool ever).",
       "url": "https://developer.android.com/studio",
       "paid": false,
-      "supported_de": ["snap"],
-      "snap": {
-        "name": "android-studio",
-        "classic": true
+      "PMs": {
+        "snap classic": "android-studio"
       }
     },
     {
@@ -63,10 +51,8 @@
       "comment": "The best IDE for C and C++. Awesome but heavy (like every JetBrain tool ever).",
       "url": "https://www.jetbrains.com/clion/",
       "paid": true,
-      "supported_de": ["snap"],
-      "snap": {
-        "name": "clion",
-        "classic": true
+      "PMs": {
+        "snap classic": "clion"
       }
     },
     {
@@ -75,10 +61,8 @@
       "comment": "I never tried it.",
       "url": "https://www.jetbrains.com/datagrip/",
       "paid": true,
-      "supported_de": ["snap"],
-      "snap": {
-        "name": "datagrip",
-        "classic": true
+      "PMs": {
+        "snap classic": "datagrip"
       }
     },
     {
@@ -87,10 +71,8 @@
       "comment": "I never tried it.",
       "url": "https://www.jetbrains.com/go/",
       "paid": true,
-      "supported_de": ["snap"],
-      "snap": {
-        "name": "goland",
-        "classic": true
+      "PMs": {
+        "snap classic": "goland"
       }
     },
     {
@@ -99,13 +81,9 @@
       "comment": "Java sucks less with it. Awesome but heavy (like every JetBrain tool ever), but even heavier since it's Java. Free version, but with less features.",
       "url": "https://www.jetbrains.com/idea/",
       "paid": false,
-      "supported_de": ["pacman","snap"],
-      "pacman": {
-        "name": "intellij-idea-community-edition"
-      },
-      "snap": {
-        "name": "intellij-idea-community",
-        "classic": true
+      "PMs": {
+        "pacman": "intellij-idea-community-edition",
+        "snap classic": "intellij-idea-community"
       }
     },
     {
@@ -114,10 +92,9 @@
       "comment": "Java sucks less with it. Awesome but heavy (like every JetBrain tool ever), but even heavier since it's Java.",
       "url": "https://www.jetbrains.com/idea/",
       "paid": true,
-      "supported_de": ["snap"],
-      "snap": {
-        "name": "intellij-idea-ultimate",
-        "classic": true
+      "PMs": {
+        "pacman": "intellij-idea-community-edition",
+        "snap classic": "intellij-idea-ultimate"
       }
     },
     {
@@ -126,12 +103,9 @@
       "comment": "I never tried it.",
       "url": "https://www.jetbrains.com/phpstorm/",
       "paid": true,
-      "supported_de": [
-        "snap"
-      ],
-      "snap": {
-        "name": "phpstorm",
-        "classic": true
+      "PMs": {
+        "pacman": "intellij-idea-community-edition",
+        "snap classic": "phpstorm"
       }
     },
     {
@@ -140,16 +114,9 @@
       "comment": "Awesome but heavy (like every JetBrain tool ever). Free version, but with less features.",
       "url": "https://www.jetbrains.com/pycharm/",
       "paid": false,
-      "supported_de": [
-        "pacman",
-        "snap"
-      ],
-      "pacman": {
-        "name": "pycharm-community"
-      },
-      "snap": {
-        "name": "pycharm-community",
-        "classic": true
+      "PMs": {
+        "pacman": "pycharm-community",
+        "snap classic": "pycharm-community"
       }
     },
     {
@@ -158,12 +125,8 @@
       "comment": "Awesome but heavy (like every JetBrain tool ever).",
       "url": "https://www.jetbrains.com/pycharm/",
       "paid": true,
-      "supported_de": [
-        "snap"
-      ],
-      "snap": {
-        "name": "pycharm-professional",
-        "classic": true
+      "PMs": {
+        "snap classic": "pycharm-professional"
       }
     },
     {
@@ -172,12 +135,8 @@
       "comment": "I never tried it.",
       "url": "https://www.jetbrains.com/rider/",
       "paid": true,
-      "supported_de": [
-        "snap"
-      ],
-      "snap": {
-        "name": "rider",
-        "classic": true
+      "PMs": {
+        "snap classic": "rider"
       }
     },
     {
@@ -186,12 +145,8 @@
       "comment": "I never tried it.",
       "url": "https://www.jetbrains.com/ruby/",
       "paid": true,
-      "supported_de": [
-        "snap"
-      ],
-      "snap": {
-        "name": "rubymine",
-        "classic": true
+      "PMs": {
+        "snap classic": "rubymine"
       }
     },
     {
@@ -200,12 +155,8 @@
       "comment": "Works fine, but VSCode is free, lighter and almost as good.",
       "url": "https://www.jetbrains.com/webstorm/",
       "paid": true,
-      "supported_de": [
-        "snap"
-      ],
-      "snap": {
-        "name": "webstorm",
-        "classic": true
+      "PMs": {
+        "snap classic": "webstorm"
       }
     }
   ],
@@ -217,11 +168,8 @@
       "comment": "I consider Nautilus more intuitive and beautiful.",
       "url": "https://apps.kde.org/dolphin/",
       "paid": false,
-      "supported_de": [
-        "pacman"
-      ],
-      "pacman": {
-        "name": "dolphin"
+      "PMs": {
+        "pacman": "dolphin"
       }
     },
     {
@@ -230,11 +178,8 @@
       "comment": "My favorite file explorer. Simple, intuitive, beautiful.",
       "url": "https://wiki.gnome.org/Apps/Files",
       "paid": false,
-      "supported_de": [
-        "pacman"
-      ],
-      "pacman": {
-        "name": "nautilus"
+      "PMs": {
+        "pacman": "nautilus"
       }
     }
   ],
@@ -246,11 +191,8 @@
       "comment": "Useful for picking colors from everywhere.",
       "url": "https://www.hjdskes.nl/projects/gcolor3/",
       "paid": false,
-      "supported_de": [
-        "pacman"
-      ],
-      "pacman": {
-        "name": "gcolor3"
+      "PMs": {
+        "pacman": "gcolor3"
       }
     },
     {
@@ -259,15 +201,9 @@
       "comment": "Hard to learn. Hard to master. No compromise, just power.",
       "url": "https://www.gimp.org",
       "paid": false,
-      "supported_de": [
-        "pacman", "snap"
-      ],
-      "pacman": {
-        "name": "gimp"
-      },
-      "snap": {
-        "name": "gimp",
-        "classic": false
+      "PMs": {
+        "pacman": "gimp",
+        "snap sandbox": "gimp"
       }
     },
     {
@@ -276,15 +212,9 @@
       "comment": "SVG rocks.",
       "url": "https://inkscape.org/",
       "paid": false,
-      "supported_de": [
-        "pacman", "snap"
-      ],
-      "pacman": {
-        "name": "inkscape"
-      },
-      "snap": {
-        "name": "inkscape",
-        "classic": false
+      "PMs": {
+        "pacman": "inkscape",
+        "snap sandbox": "inkscape"
       }
     }
   ],
@@ -296,11 +226,8 @@
       "comment": "Nice to look at images and crop them.",
       "url": "https://wiki.gnome.org/Apps/Shotwell",
       "paid": false,
-      "supported_de": [
-        "pacman"
-      ],
-      "pacman": {
-        "name": "shotwell"
+      "PMs": {
+        "pacman": "shotwell"
       }
     },
     {
@@ -309,15 +236,9 @@
       "comment": "Must-have to be able to open everything.",
       "url": "https://www.videolan.org/vlc/",
       "paid": false,
-      "supported_de": [
-        "pacman", "snap"
-      ],
-      "pacman": {
-        "name": "vlc"
-      },
-      "snap": {
-        "name": "vlc",
-        "classic": false
+      "PMs": {
+        "pacman": "vlc",
+        "snap sandbox": "vlc"
       }
     }
   ],
@@ -329,11 +250,8 @@
       "comment": "I never tried it.",
       "url": "https://www.freeoffice.com/en/",
       "paid": false,
-      "supported_de": [
-        "pacman"
-      ],
-      "pacman": {
-        "name": "freeoffice"
+      "PMs": {
+        "pacman": "freeoffice"
       }
     },
     {
@@ -342,15 +260,9 @@
       "comment": "Microsoft Office is better, but not available on Linux.",
       "url": "https://www.libreoffice.org/",
       "paid": false,
-      "supported_de": [
-        "pacman", "snap"
-      ],
-      "pacman": {
-        "name": "libreoffice"
-      },
-      "snap": {
-        "name": "libreoffice",
-        "classic": false
+      "PMs": {
+        "pacman": "libreoffice",
+        "snap sandbox": "libreoffice"
       }
     },
     {
@@ -359,8 +271,8 @@
       "comment": "My favorite time tracking tool. Free, simple and synchronized on web. Available later.",
       "url": "https://www.toggl.com/track/",
       "paid": false,
-      "supported_de": [
-      ]
+      "PMs": {
+      }
     },
     {
       "name": "SimpleNote",
@@ -368,12 +280,8 @@
       "comment": "My favorite notepad. Free, simple and synchronized on web.",
       "url": "https://simplenote.com",
       "paid": false,
-      "supported_de": [
-        "snap"
-      ],
-      "snap": {
-        "name": "simplenote",
-        "classic": false
+      "PMs": {
+        "snap sandbox": "snap"
       }
     }
   ],
@@ -385,15 +293,9 @@
       "comment": "Well, that's Discord.",
       "url": "https://discord.com/",
       "paid": false,
-      "supported_de": [
-        "pacman", "snap"
-      ],
-      "pacman": {
-        "name": "discord"
-      },
-      "snap": {
-        "name": "discord",
-        "classic": false
+      "PMs": {
+        "pacman": "discord",
+        "snap sandbox": "discord"
       }
     },
     {
@@ -402,15 +304,9 @@
       "comment": "Works fine.",
       "url": "https://www.thunderbird.net/",
       "paid": false,
-      "supported_de": [
-        "pacman", "snap"
-      ],
-      "pacman": {
-        "name": "thunderbird"
-      },
-      "snap": {
-        "name": "thunderbird",
-        "classic": false
+      "PMs": {
+        "pacman": "thunderbird",
+        "snap sandbox": "thunderbird"
       }
     }
   ],
@@ -422,11 +318,8 @@
       "comment": "Useful to visualise what takes you space on your disk.",
       "url": "https://apps.kde.org/filelight/",
       "paid": false,
-      "supported_de": [
-        "pacman"
-      ],
-      "pacman": {
-        "name": "filelight"
+      "PMs": {
+        "pacman": "filelight"
       }
     },
     {
@@ -435,15 +328,9 @@
       "comment": "Useful to visualise what uses your RAM, CPU, GPU and network.",
       "url": "https://wiki.gnome.org/Apps/SystemMonitor/",
       "paid": false,
-      "supported_de": [
-        "pacman", "snap"
-      ],
-      "pacman": {
-        "name": "gnome-system-monitor"
-      },
-      "snap": {
-        "name": "gnome-system-monitor",
-        "classic": false
+      "PMs": {
+        "pacman": "gnome-system-monitor",
+        "snap sandbox": "gnome-system-monitor"
       }
     },
     {
@@ -452,11 +339,8 @@
       "comment": "Powerful system restore.",
       "url": "https://github.com/teejee2008/timeshift",
       "paid": false,
-      "supported_de": [
-        "pacman"
-      ],
-      "pacman": {
-        "name": "timeshift"
+      "PMs": {
+        "pacman": "timeshift"
       }
     }
   ],
@@ -468,11 +352,8 @@
       "comment": "I used it for a long time, but Konsole have a better support of ZSH.",
       "url": "https://wiki.gnome.org/Apps/Terminal",
       "paid": false,
-      "supported_de": [
-        "pacman", "snap"
-      ],
-      "pacman": {
-        "name": "gnome-terminal"
+      "PMs": {
+        "pacman": "gnome-terminal"
       }
     },
     {
@@ -481,11 +362,8 @@
       "comment": "My favorite Terminal Emulator. Fully support everything I need.",
       "url": "https://konsole.kde.org/",
       "paid": false,
-      "supported_de": [
-        "pacman"
-      ],
-      "pacman": {
-        "name": "konsole"
+      "PMs": {
+        "pacman": "konsole"
       }
     }
   ],
@@ -497,15 +375,9 @@
       "comment": "I never used it, I like the Mozilla philosophy.",
       "url": "https://www.chromium.org/Home",
       "paid": false,
-      "supported_de": [
-        "pacman", "snap"
-      ],
-      "pacman": {
-        "name": "chromium"
-      },
-      "snap": {
-        "name": "chromium",
-        "classic": false
+      "PMs": {
+        "pacman": "chromium",
+        "snap sandbox": "chromium"
       }
     },
     {
@@ -514,15 +386,9 @@
       "comment": "My daily browser.",
       "url": "https://www.mozilla.org/en-US/firefox/new/",
       "paid": false,
-      "supported_de": [
-        "pacman", "snap"
-      ],
-      "pacman": {
-        "name": "firefox"
-      },
-      "snap": {
-        "name": "firefox",
-        "classic": false
+      "PMs": {
+        "pacman": "firefox",
+        "snap sandbox": "firefox"
       }
     },
     {
@@ -531,11 +397,8 @@
       "comment": "Must-have if you care about yourself.",
       "url": "https://www.torproject.org/",
       "paid": false,
-      "supported_de": [
-        "pacman"
-      ],
-      "pacman": {
-        "name": "torbrowser-launcher"
+      "PMs": {
+        "pacman": "torbrowser-launcher"
       }
     }
   ],
@@ -547,15 +410,9 @@
       "comment": "Works.",
       "url": "https://apps.kde.org/kcalc/",
       "paid": false,
-      "supported_de": [
-        "pacman", "snap"
-      ],
-      "pacman": {
-        "name": "kcalc"
-      },
-      "snap": {
-        "name": "kcalc",
-        "classic": false
+      "PMs": {
+        "pacman": "kcalc",
+        "snap sandbox": "kcalc"
       }
     },
 
@@ -565,11 +422,8 @@
       "comment": "Easy to use and works fine.",
       "url": "https://www.maartenbaert.be/simplescreenrecorder/",
       "paid": false,
-      "supported_de": [
-        "pacman"
-      ],
-      "pacman": {
-        "name": "simplescreenrecorder"
+      "PMs": {
+        "pacman": "simplescreenrecorder"
       }
     },
 
@@ -579,11 +433,8 @@
       "comment": "Beautiful, useful, with a lot of nice plugins. Is on every UNIX rice.",
       "url": "https://www.zsh.org",
       "paid": false,
-      "supported_de": [
-        "pacman"
-      ],
-      "pacman": {
-        "name": "zsh"
+      "PMs": {
+        "pacman": "zsh"
       }
     }
   ]
