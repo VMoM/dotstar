@@ -1,0 +1,590 @@
+{
+  "Text editors": [
+    {
+      "name": "Atom",
+      "description": "A hackable text editor for the 21st Century",
+      "comment": "Really appreciated by a lot of people, but I think that Visual Studio Code is just way better.",
+      "url": "https://atom.io",
+      "paid": false,
+      "supported_de": ["pacman", "snap"],
+      "pacman": {
+        "name":"atom"
+      },
+      "snap": {
+        "name": "atom",
+        "classic": true
+      }
+    },
+    {
+      "name": "Gedit",
+      "description": "Text editor of the GNOME desktop environment",
+      "comment": "Lightweight and fast to open, it's my editor for on-the-go edits.",
+      "url": "https://wiki.gnome.org/Apps/Gedit",
+      "paid": false,
+      "supported_de": ["pacman", "snap"],
+      "pacman": {
+        "name": "gedit"
+      },
+      "snap": {
+        "name": "gedit",
+        "classic": false
+      }
+    },
+    {
+      "name": "Visual Studio Code",
+      "description": "Code editing. Redefined.",
+      "comment": "Awesome compromise between a text editor and a heavy IDE. Improved by a huge number a plugins.",
+      "url": "https://code.visualstudio.com",
+      "paid": false,
+      "supported_de": ["snap"],
+      "snap": {
+        "name": "code",
+        "classic": true
+      }
+    }
+  ],
+
+  "JetBrains IDEs": [
+    {
+      "name": "Android Studio",
+      "description": "The IDE for Android",
+      "comment": "Must-have for Android development. Awesome but heavy (like every JetBrain tool ever).",
+      "url": "https://developer.android.com/studio",
+      "paid": false,
+      "supported_de": ["snap"],
+      "snap": {
+        "name": "android-studio",
+        "classic": true
+      }
+    },
+    {
+      "name": "Clion",
+      "description": "A cross-platform IDE for C and C++",
+      "comment": "The best IDE for C and C++. Awesome but heavy (like every JetBrain tool ever).",
+      "url": "https://www.jetbrains.com/clion/",
+      "paid": true,
+      "supported_de": ["snap"],
+      "snap": {
+        "name": "clion",
+        "classic": true
+      }
+    },
+    {
+      "name": "DataGrip",
+      "description": "Many databases, one tool",
+      "comment": "I never tried it.",
+      "url": "https://www.jetbrains.com/datagrip/",
+      "paid": true,
+      "supported_de": ["snap"],
+      "snap": {
+        "name": "datagrip",
+        "classic": true
+      }
+    },
+    {
+      "name": "GoLand",
+      "description": "A Clever IDE to Go",
+      "comment": "I never tried it.",
+      "url": "https://www.jetbrains.com/go/",
+      "paid": true,
+      "supported_de": ["snap"],
+      "snap": {
+        "name": "goland",
+        "classic": true
+      }
+    },
+    {
+      "name": "IntelliJ IDEA Community",
+      "description": "Capable and Ergonomic Java IDE",
+      "comment": "Java sucks less with it. Awesome but heavy (like every JetBrain tool ever), but even heavier since it's Java. Free version, but with less features.",
+      "url": "https://www.jetbrains.com/idea/",
+      "paid": false,
+      "supported_de": ["pacman","snap"],
+      "pacman": {
+        "name": "intellij-idea-community-edition"
+      },
+      "snap": {
+        "name": "intellij-idea-community",
+        "classic": true
+      }
+    },
+    {
+      "name": "IntelliJ IDEA Ultimate",
+      "description": "Capable and Ergonomic Java IDE for Entreprise, Web and Mobile Development",
+      "comment": "Java sucks less with it. Awesome but heavy (like every JetBrain tool ever), but even heavier since it's Java.",
+      "url": "https://www.jetbrains.com/idea/",
+      "paid": true,
+      "supported_de": ["snap"],
+      "snap": {
+        "name": "intellij-idea-ultimate",
+        "classic": true
+      }
+    },
+    {
+      "name": "PhpStorm",
+      "description": "The Lightning-Smart PHP IDE",
+      "comment": "I never tried it.",
+      "url": "https://www.jetbrains.com/phpstorm/",
+      "paid": true,
+      "supported_de": [
+        "snap"
+      ],
+      "snap": {
+        "name": "phpstorm",
+        "classic": true
+      }
+    },
+    {
+      "name": "Pycharm Community",
+      "description": "The most intelligent Python IDE",
+      "comment": "Awesome but heavy (like every JetBrain tool ever). Free version, but with less features.",
+      "url": "https://www.jetbrains.com/pycharm/",
+      "paid": false,
+      "supported_de": [
+        "pacman",
+        "snap"
+      ],
+      "pacman": {
+        "name": "pycharm-community"
+      },
+      "snap": {
+        "name": "pycharm-community",
+        "classic": true
+      }
+    },
+    {
+      "name": "Pycharm Pro",
+      "description": "The Python IDE for Professional Developers",
+      "comment": "Awesome but heavy (like every JetBrain tool ever).",
+      "url": "https://www.jetbrains.com/pycharm/",
+      "paid": true,
+      "supported_de": [
+        "snap"
+      ],
+      "snap": {
+        "name": "pycharm-professional",
+        "classic": true
+      }
+    },
+    {
+      "name": "Rider",
+      "description": "Fast and powerful cross-platform .NET IDE",
+      "comment": "I never tried it.",
+      "url": "https://www.jetbrains.com/rider/",
+      "paid": true,
+      "supported_de": [
+        "snap"
+      ],
+      "snap": {
+        "name": "rider",
+        "classic": true
+      }
+    },
+    {
+      "name": "RubyMine",
+      "description": "The Most Intelligent Ruby and Rails IDE",
+      "comment": "I never tried it.",
+      "url": "https://www.jetbrains.com/ruby/",
+      "paid": true,
+      "supported_de": [
+        "snap"
+      ],
+      "snap": {
+        "name": "rubymine",
+        "classic": true
+      }
+    },
+    {
+      "name": "WebStorm",
+      "description": "The smartest JavaScript IDE",
+      "comment": "Works fine, but VSCode is free, lighter and almost as good.",
+      "url": "https://www.jetbrains.com/webstorm/",
+      "paid": true,
+      "supported_de": [
+        "snap"
+      ],
+      "snap": {
+        "name": "webstorm",
+        "classic": true
+      }
+    }
+  ],
+
+  "File managers": [
+    {
+      "name": "Dolphin",
+      "description": "The file explorer KDE",
+      "comment": "I consider Nautilus more intuitive and beautiful.",
+      "url": "https://apps.kde.org/dolphin/",
+      "paid": false,
+      "supported_de": [
+        "pacman"
+      ],
+      "pacman": {
+        "name": "dolphin"
+      }
+    },
+    {
+      "name": "Nautilus",
+      "description": "File explorer of the GNOME desktop environment",
+      "comment": "My favorite file explorer. Simple, intuitive, beautiful.",
+      "url": "https://wiki.gnome.org/Apps/Files",
+      "paid": false,
+      "supported_de": [
+        "pacman"
+      ],
+      "pacman": {
+        "name": "nautilus"
+      }
+    }
+  ],
+
+  "Graphisme tools": [
+    {
+      "name": "Gcolor3",
+      "description": "Pick colors from the selector or the screen. A.K.A Color Picker.",
+      "comment": "Useful for picking colors from everywhere.",
+      "url": "https://www.hjdskes.nl/projects/gcolor3/",
+      "paid": false,
+      "supported_de": [
+        "pacman"
+      ],
+      "pacman": {
+        "name": "gcolor3"
+      }
+    },
+    {
+      "name": "GIMP",
+      "description": "Create images and modify pictures",
+      "comment": "Hard to learn. Hard to master. No compromise, just power.",
+      "url": "https://www.gimp.org",
+      "paid": false,
+      "supported_de": [
+        "pacman", "snap"
+      ],
+      "pacman": {
+        "name": "gimp"
+      },
+      "snap": {
+        "name": "gimp",
+        "classic": false
+      }
+    },
+    {
+      "name": "Inkscape",
+      "description": "Free vectoriel images editor",
+      "comment": "SVG rocks.",
+      "url": "https://inkscape.org/",
+      "paid": false,
+      "supported_de": [
+        "pacman", "snap"
+      ],
+      "pacman": {
+        "name": "inkscape"
+      },
+      "snap": {
+        "name": "inkscape",
+        "classic": false
+      }
+    }
+  ],
+
+  "Multimedia tools": [
+    {
+      "name": "Shotwell",
+      "description": "Create images and modify pictures",
+      "comment": "Nice to look at images and crop them.",
+      "url": "https://wiki.gnome.org/Apps/Shotwell",
+      "paid": false,
+      "supported_de": [
+        "pacman"
+      ],
+      "pacman": {
+        "name": "shotwell"
+      }
+    },
+    {
+      "name": "VLC",
+      "description": "VLC media player, the open-source multimedia player",
+      "comment": "Must-have to be able to open everything.",
+      "url": "https://www.videolan.org/vlc/",
+      "paid": false,
+      "supported_de": [
+        "pacman", "snap"
+      ],
+      "pacman": {
+        "name": "vlc"
+      },
+      "snap": {
+        "name": "vlc",
+        "classic": false
+      }
+    }
+  ],
+
+  "Productivity and office tools": [
+    {
+      "name": "FreeOffice",
+      "description": "A complete, reliable, lightning-fast and Microsoft Office-compatible office suite with a word processor, spreadsheet, and presentation graphics software.",
+      "comment": "I never tried it.",
+      "url": "https://www.freeoffice.com/en/",
+      "paid": false,
+      "supported_de": [
+        "pacman"
+      ],
+      "pacman": {
+        "name": "freeoffice"
+      }
+    },
+    {
+      "name": "LibreOffice",
+      "description": "The LibreOffice productivity suite",
+      "comment": "Microsoft Office is better, but not available on Linux.",
+      "url": "https://www.libreoffice.org/",
+      "paid": false,
+      "supported_de": [
+        "pacman", "snap"
+      ],
+      "pacman": {
+        "name": "libreoffice"
+      },
+      "snap": {
+        "name": "libreoffice",
+        "classic": false
+      }
+    },
+    {
+      "name": "Toggl Track",
+      "description": "Simple and Intuitive Time Tracking Software",
+      "comment": "My favorite time tracking tool. Free, simple and synchronized on web. Available later.",
+      "url": "https://www.toggl.com/track/",
+      "paid": false,
+      "supported_de": [
+      ]
+    },
+    {
+      "name": "SimpleNote",
+      "description": "The simplest way to keep notes.",
+      "comment": "My favorite notepad. Free, simple and synchronized on web.",
+      "url": "https://simplenote.com",
+      "paid": false,
+      "supported_de": [
+        "snap"
+      ],
+      "snap": {
+        "name": "simplenote",
+        "classic": false
+      }
+    }
+  ],
+
+  "Social": [
+    {
+      "name": "Discord",
+      "description": "All-in-one voice and text chat for gamers that's free, secure, and works on both your desktop and phone.",
+      "comment": "Well, that's Discord.",
+      "url": "https://discord.com/",
+      "paid": false,
+      "supported_de": [
+        "pacman", "snap"
+      ],
+      "pacman": {
+        "name": "discord"
+      },
+      "snap": {
+        "name": "discord",
+        "classic": false
+      }
+    },
+    {
+      "name": "Thunderbird",
+      "description": "Read and write emails",
+      "comment": "Works fine.",
+      "url": "https://www.thunderbird.net/",
+      "paid": false,
+      "supported_de": [
+        "pacman", "snap"
+      ],
+      "pacman": {
+        "name": "thunderbird"
+      },
+      "snap": {
+        "name": "thunderbird",
+        "classic": false
+      }
+    }
+  ],
+
+  "System tools": [
+    {
+      "name": "Filelight",
+      "description": "Filelight creates an interactive map to show the disk utilisation of your computer",
+      "comment": "Useful to visualise what takes you space on your disk.",
+      "url": "https://apps.kde.org/filelight/",
+      "paid": false,
+      "supported_de": [
+        "pacman"
+      ],
+      "pacman": {
+        "name": "filelight"
+      }
+    },
+    {
+      "name": "Gnome System Monitor",
+      "description": "See and manage system ressources",
+      "comment": "Useful to visualise what uses your RAM, CPU, GPU and network.",
+      "url": "https://wiki.gnome.org/Apps/SystemMonitor/",
+      "paid": false,
+      "supported_de": [
+        "pacman", "snap"
+      ],
+      "pacman": {
+        "name": "gnome-system-monitor"
+      },
+      "snap": {
+        "name": "gnome-system-monitor",
+        "classic": false
+      }
+    },
+    {
+      "name": "Timeshift",
+      "description": "A system restore utility for Linux",
+      "comment": "Powerful system restore.",
+      "url": "https://github.com/teejee2008/timeshift",
+      "paid": false,
+      "supported_de": [
+        "pacman"
+      ],
+      "pacman": {
+        "name": "timeshift"
+      }
+    }
+  ],
+
+  "Terminal emulator": [
+    {
+      "name": "Gnome Terminal",
+      "description": "The GNOME Terminal Emulator",
+      "comment": "I used it for a long time, but Konsole have a better support of ZSH.",
+      "url": "https://wiki.gnome.org/Apps/Terminal",
+      "paid": false,
+      "supported_de": [
+        "pacman", "snap"
+      ],
+      "pacman": {
+        "name": "gnome-terminal"
+      }
+    },
+    {
+      "name": "Konsole",
+      "description": "The KDE Terminal Emulator",
+      "comment": "My favorite Terminal Emulator. Fully support everything I need.",
+      "url": "https://konsole.kde.org/",
+      "paid": false,
+      "supported_de": [
+        "pacman"
+      ],
+      "pacman": {
+        "name": "konsole"
+      }
+    }
+  ],
+
+  "Web browsers": [
+    {
+      "name": "Chromium",
+      "description": "Chromium web browser, open-source version of Chrome",
+      "comment": "I never used it, I like the Mozilla philosophy.",
+      "url": "https://www.chromium.org/Home",
+      "paid": false,
+      "supported_de": [
+        "pacman", "snap"
+      ],
+      "pacman": {
+        "name": "chromium"
+      },
+      "snap": {
+        "name": "chromium",
+        "classic": false
+      }
+    },
+    {
+      "name": "Firefox",
+      "description": "Mozilla Firefox web browser",
+      "comment": "My daily browser.",
+      "url": "https://www.mozilla.org/en-US/firefox/new/",
+      "paid": false,
+      "supported_de": [
+        "pacman", "snap"
+      ],
+      "pacman": {
+        "name": "firefox"
+      },
+      "snap": {
+        "name": "firefox",
+        "classic": false
+      }
+    },
+    {
+      "name": "Tor Browser Launcher",
+      "description": "A program to help you download, keep updated, and run the Tor Browser Bundle",
+      "comment": "Must-have if you care about yourself.",
+      "url": "https://www.torproject.org/",
+      "paid": false,
+      "supported_de": [
+        "pacman"
+      ],
+      "pacman": {
+        "name": "torbrowser-launcher"
+      }
+    }
+  ],
+
+  "Others": [
+    {
+      "name": "KCalc",
+      "description": "Scientific Calculator from KDE",
+      "comment": "Works.",
+      "url": "https://apps.kde.org/kcalc/",
+      "paid": false,
+      "supported_de": [
+        "pacman", "snap"
+      ],
+      "pacman": {
+        "name": "kcalc"
+      },
+      "snap": {
+        "name": "kcalc",
+        "classic": false
+      }
+    },
+
+    {
+      "name": "Simple Screen Recorder",
+      "description": "A feature-rich screen recorder that supports X11 and OpenGL",
+      "comment": "Easy to use and works fine.",
+      "url": "https://www.maartenbaert.be/simplescreenrecorder/",
+      "paid": false,
+      "supported_de": [
+        "pacman"
+      ],
+      "pacman": {
+        "name": "simplescreenrecorder"
+      }
+    },
+
+    {
+      "name": "ZSH",
+      "description": "A very advanced and programmable command interpreter (shell) for UNIX",
+      "comment": "Beautiful, useful, with a lot of nice plugins. Is on every UNIX rice.",
+      "url": "https://www.zsh.org",
+      "paid": false,
+      "supported_de": [
+        "pacman"
+      ],
+      "pacman": {
+        "name": "zsh"
+      }
+    }
+  ]
+}
