@@ -93,7 +93,6 @@
       "url": "https://www.jetbrains.com/idea/",
       "paid": true,
       "PMs": {
-        "pacman": "intellij-idea-community-edition",
         "snap classic": "intellij-idea-ultimate"
       }
     },
@@ -104,7 +103,6 @@
       "url": "https://www.jetbrains.com/phpstorm/",
       "paid": true,
       "PMs": {
-        "pacman": "intellij-idea-community-edition",
         "snap classic": "phpstorm"
       }
     },
