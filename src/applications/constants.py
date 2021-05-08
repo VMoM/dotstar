@@ -1,1 +1,5 @@
-SUPPORTED_PMS = {"pacman", "snap sandbox", "snap classic"}
+SUPPORTED_PMS = {
+    "pacman": "pacman",
+    "snap sandbox": "snap",
+    "snap classic": "snap"
+}

@@ -4,10 +4,12 @@ from typing import Dict
 from colorama import Fore  # for colors of the output
 from constants import DESCRIPTION_COLOR, QUESTION_COLOR, ERROR_COLOR
 
+from typing import Optional
+
 
 class Application:
     """
-    Class that describes entities of applications.xml
+    Class that describes entities of applications.json
     """
     def __init__(
             self,
@@ -16,16 +18,14 @@ class Application:
             comment: str,
             url: str,
             paid: bool,
-            installation_commands: Dict[str, str],
-            deletion_commands: Dict[str, str]
+            pms: Dict[str, str]
     ) -> None:
         self.name = name
         self.description = description
         self.comment = comment
         self.url = url
         self.paid = paid
-        self.installation_commands = installation_commands
-        self.deletion_commands = deletion_commands
+        self.pms = pms
 
     def print_informations(self) -> None:
         """
@@ -39,7 +39,7 @@ class Application:
 
         # print all the possibles pm inline
         print(Fore.MAGENTA + "Supported package managers: " + Fore.RESET, end="")
-        for possible_pm in self.installation_commands.keys():
+        for possible_pm in self.pms.keys():
             print(possible_pm, end=" ")
         print()
 
@@ -55,14 +55,14 @@ class Application:
         )
         return install_application_choice in ("y", "Y")
 
-    def install(self, usable_pms: set[str]) -> None:
+    def ask_pm(self, usable_pms: set[str]) -> Optional[str]:
         """
-        Install the applications after asking to the user which PM use
+        Ask to the user witch pm use for the installation
+        :return: the pm to use, or None if cancel
         """
-        possibles_pm = list(set(self.installation_commands.keys()) & usable_pms)
-
-        # getting the wanted PM by printing the list of possibles PM and asking which use
+        possibles_pm = list(set(self.pms.keys()) & usable_pms)
         choice = 0
+
         while not 1 <= choice <= len(possibles_pm):
             print(DESCRIPTION_COLOR, "Possible package managers:")
             for index in range(len(possibles_pm)):
@@ -83,7 +83,7 @@ class Application:
                     + "Installation canceled"
                     + Fore.RESET
                 )
-                return
+                return None
             elif not (choice.isnumeric() and 1 <= int(choice) <= len(possibles_pm)):
                 print(
                     ERROR_COLOR
@@ -93,12 +93,5 @@ class Application:
                 choice = 0
             else:
                 choice = int(choice)
-        pm = possibles_pm[choice - 1]
 
-        print("Installation with " + pm + ":")
-        command = self.installation_commands.get(pm)
-        os.system(command)
-
-    def delete(self, used_pm: str) -> None:
-        command = self.deletion_commands.get(used_pm)
-        os.system(command)
+        return possibles_pm[choice - 1]
