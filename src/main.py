@@ -2,6 +2,7 @@ import os  # for getting the DE
 import colorama  # for colors with print() and input()
 
 import applications.utilities as app_utils
+import theme.kde as kde
 import res
 import constants
 
@@ -48,7 +49,12 @@ def main() -> None:
         + "Your desktop environment is compatible with the customization. Do you want to customize it? (y/N): "
         + colorama.Fore.RESET
     ) in ("Y", "y"):
-        print("WIP")
+        print(
+            "My custom theme \"Sweet-Layan-mashup\", a mashup of my two favorites KDE themes ",
+            "(Sweet by EliverLara and Layan by Vince Liuice, plus Papirus icon theme) will be install.",
+            "You can return to your previous theme by going to apparence/ in the KDE setting app."
+        )
+        kde.install_kde_theme("Sweet-Layan-mashup", res.get_absolute_res_path("theme/KDE/Sweet-Layan-mashup"))
 
 
 if __name__ == "__main__":
