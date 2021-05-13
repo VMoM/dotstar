@@ -65,9 +65,9 @@ After starting the app, dotstar will successively ask you if you want it to effe
         - [CLion](https://www.jetbrains.com/clion/)
         - [DataGrip](https://www.jetbrains.com/datagrip/)
         - [GoLand](https://www.jetbrains.com/go/)
-        - [IntelliJ IDEA](https://www.jetbrains.com/idea/)
+        - [IntelliJ IDEA](https://www.jetbrains.com/idea/) (Community & Ultimate)
         - [PhpStorm](https://www.jetbrains.com/phpstorm/)
-        - [Pycharm](https://www.jetbrains.com/pycharm/)
+        - [Pycharm](https://www.jetbrains.com/pycharm/) (Community & Pro)
         - [Rider](https://www.jetbrains.com/rider/)
         - [RubyMine](https://www.jetbrains.com/ruby/)
         - [WebStorm](https://www.jetbrains.com/webstorm/)
@@ -79,9 +79,10 @@ After starting the app, dotstar will successively ask you if you want it to effe
  - **Graphisme tools**
     - [Gcolor3](https://www.hjdskes.nl/projects/gcolor3/)
     - [GIMP](https://www.gimp.org)
-    - [Shotwell](https://wiki.gnome.org/Apps/Shotwell)
+    - [Inkscape](https://inkscape.org/)
 
 - **Multimedia**
+    - [Shotwell](https://wiki.gnome.org/Apps/Shotwell)
     - [VLC](https://www.videolan.org/vlc/)
 
 - **Productivity & office tools**
@@ -125,7 +126,7 @@ After starting the app, dotstar will successively ask you if you want it to effe
 
 ## Apparence
 ### Supported DEs
-- [ ] KDE Plasma 5
+- [X] KDE Plasma 5
 - [ ] Gnome 3
 
 
