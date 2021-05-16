@@ -1,7 +1,9 @@
 import os
 import json
 
-from applications.constants import SUPPORTED_PMS
+import ui
+
+import applications.constants as app_constants
 from applications.application import Application
 from applications.package_manager import PackageManager
 
@@ -31,7 +33,9 @@ def read_application_store(filename: str) -> dict[str, list[Application]]:
 
                 available_pm_for_this_app: dict[PackageManager, str] = {}
                 for pm_name in this_application_data["PMs"]:
-                    available_pm_for_this_app[SUPPORTED_PMS[pm_name]] = this_application_data["PMs"][pm_name]
+                    available_pm_for_this_app[
+                        app_constants.SUPPORTED_PMS[pm_name]
+                    ] = this_application_data["PMs"][pm_name]
 
                 # adding a new Application in the list of the tag
                 application_store[category_name].append(
@@ -54,10 +58,12 @@ def get_usable_pms() -> dict[str, PackageManager]:
     :return: a dict of usable PackageManager, with their dotstar name as key
     """
     usable_pms = dict()
-    for supported_pm_name in SUPPORTED_PMS.keys():
-        command_to_check_existence = "type " + SUPPORTED_PMS[supported_pm_name].system_name + " > /dev/null 2>&1"
+    for supported_pm_name in app_constants.SUPPORTED_PMS.keys():
+        command_to_check_existence = \
+            "type " + app_constants.SUPPORTED_PMS[supported_pm_name].system_name \
+            + " > /dev/null 2>&1"
         if os.system(command_to_check_existence) == 0:
-            usable_pms[supported_pm_name] = SUPPORTED_PMS[supported_pm_name]
+            usable_pms[supported_pm_name] = app_constants.SUPPORTED_PMS[supported_pm_name]
 
     return usable_pms
 
@@ -83,10 +89,10 @@ def install_apps(installation_dict: dict[PackageManager, list[str]]) -> None:
         if pm.multiple_apps_query_support and len(installation_dict[pm]) > 0:
             all_apps_to_install = " ".join(installation_dict[pm])
             command = pm.command_shape % all_apps_to_install
-            print("The following installation command will be executed: " + command)
-            os.system(command)
+            ui.print_information("The following installation command will be executed: " + command)
+            ui.exec_system(command)
         else:
             for app_name in installation_dict[pm]:
                 command = pm.command_shape % app_name
-                print("The following installation command will be executed: " + command)
-                os.system(command)
+                ui.print_information("The following installation command will be executed: " + command)
+                ui.exec_system(command)

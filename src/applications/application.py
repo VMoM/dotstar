@@ -1,7 +1,7 @@
 from typing import Optional
 from colorama import Fore  # for colors of the output
 
-from constants import DESCRIPTION_COLOR, QUESTION_COLOR, ERROR_COLOR
+import ui
 from applications.package_manager import PackageManager
 
 
@@ -29,28 +29,24 @@ class Application:
         """
         Print all the informations about the app.
         """
-        print(DESCRIPTION_COLOR + "Application name: " + Fore.RESET + self.name)
-        print(DESCRIPTION_COLOR + "Description: " + Fore.RESET + self.description)
-        print(DESCRIPTION_COLOR + "Comment: " + Fore.RESET + self.comment)
-        print(DESCRIPTION_COLOR + "URL: " + Fore.RESET + self.url)
-        print(DESCRIPTION_COLOR + "Paid: " + Fore.RESET + str(self.paid))
+        ui.print_description("Application name: " + self.name)
+        ui.print_description("Description: " + self.description)
+        ui.print_description("Comment: " + self.comment)
+        ui.print_description("URL: " + self.url)
+        ui.print_description("Paid: " + ("yes" if self.paid else "no"))
 
         # print all the possibles pm inline
-        print(Fore.MAGENTA + "Supported package managers: " + Fore.RESET, end="")
+        supported_pm = ""
         for possible_pm in self.pms.keys():
-            print(possible_pm.system_name, end=" ")
-        print()
+            supported_pm += possible_pm.system_name + " "
+        ui.print_description("Supported package managers: " + str(supported_pm))
 
     def ask_for_installation(self) -> bool:
         """
         Ask to the user if they want to install the applications
         :return: if the user wants to install the applications
         """
-        install_application_choice = input(
-            QUESTION_COLOR
-            + "Do you want to install " + self.name + "? (y/N): "
-            + Fore.RESET
-        )
+        install_application_choice = ui.ask("Do you want to install " + self.name + "? (y/N): ")
         return install_application_choice in ("y", "Y")
 
     def ask_pm(self, usable_pms: dict[str, PackageManager]) -> Optional[PackageManager]:
@@ -62,32 +58,19 @@ class Application:
         choice = 0
 
         while not 1 <= choice <= len(possibles_pm):
-            print(DESCRIPTION_COLOR, "Possible package managers:")
+            ui.print_information("Possible package managers:")
             for index in range(len(possibles_pm)):
-                print(
-                    DESCRIPTION_COLOR
-                    + str(index + 1) + ": "
-                    + Fore.RESET
-                    + possibles_pm[index].system_name
+                ui.print_description(
+                    str(index + 1) + ": " + possibles_pm[index].system_name
                 )
-            choice = input(
-                QUESTION_COLOR
-                + "Enter the number of the package manager you want to use (-1 to cancel the installation): "
-                + Fore.RESET
+            choice = ui.ask(
+                "Enter the number of the package manager you want to use (-1 to cancel the installation): "
             )
             if choice == "-1":
-                print(
-                    ERROR_COLOR
-                    + "Installation canceled"
-                    + Fore.RESET
-                )
+                ui.print_error("Installation canceled")
                 return None
             elif not (choice.isnumeric() and 1 <= int(choice) <= len(possibles_pm)):
-                print(
-                    ERROR_COLOR
-                    + "Error: please enter a number between %d and %d" % (1, len(possibles_pm))
-                    + Fore.RESET
-                )
+                ui.print_error("Error: please enter a number between %d and %d" % (1, len(possibles_pm)))
                 choice = 0
             else:
                 choice = int(choice)
