@@ -38,13 +38,16 @@ def install_kde_theme(theme_name: str, theme_folder_path: str) -> None:
             ui.print_error("Error: impossible to install the theme.")
             return
 
+    ui.print_information("Theme successfully installed.")
+    ui.print_information("Setting the theme...")
+
     setting_the_theme_command = "lookandfeeltool --apply " + theme_name
     setting_failed = bool(ui.exec_system(setting_the_theme_command))
 
     if setting_failed:
         ui.print_error("Error: impossible to set the theme.")
     else:
-        ui.print_information("Theme successfully installed.")
+        ui.print_information("Theme successfully set.")
         ui.print_information(
             "Note that with KDE a bug can occur when changing window style:"
             + "if you have a white strip on some window (like the setting app),"
