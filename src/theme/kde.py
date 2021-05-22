@@ -49,12 +49,18 @@ def install_kde_theme(theme_name: str, theme_folder_path: str) -> None:
         "aurorae",
         "icons",
         "wallpaper",
-        "sddmtheme",
+        # "sddmtheme", TODO find how to use
         "xcursor"
     ]
     # TODO find where other dependencies are
     dependency_paths = [
-        LOCAL_PATH + "share/icons"
+        LOCAL_PATH + "share/color-schemes/",
+        LOCAL_PATH + "share/plasma/look-and-feel/",
+        LOCAL_PATH + "share/aurorae/themes/",
+        LOCAL_PATH + "share/icons/",
+        LOCAL_PATH + "share/wallpapers/",
+        # LOCAL_PATH + "sddm", TODO find how to use
+        LOCAL_PATH + "share/icons/"
     ]
     for i in range(len(dependency_names)):
         ui.print_information("Installation of the %s" % dependency_names[i])

@@ -8,7 +8,7 @@ readonly LINK
 readonly ARCHIVE_NAME
 readonly PATH_TO_THEME_COMPONENT
 
-cd "$PATH_TO_THEME_COMPONENT" || exit
-wget "$LINK"
-tar -xf "$ARCHIVE_NAME"
-rm "$ARCHIVE_NAME"
+cd "$PATH_TO_THEME_COMPONENT" || echo "Error: invalid path to the theme component ($PATH_TO_THEME_COMPONENT)." || exit 1
+wget "$LINK" || echo "Error: impossible to download the ressource linked ($LINK)." || exit 1
+tar -xf "$ARCHIVE_NAME" || echo "Error: impossible to extract the archive ($ARCHIVE_NAME)." || exit 1
+rm "$ARCHIVE_NAME" || echo "Error: impossible to delete the now useless archive ($ARCHIVE_NAME)."
