@@ -1,0 +1,36 @@
+{
+  "colorscheme": {
+    "download_link": "https://dllb2.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE1NTcwMDQzNTYiLCJ1IjpudWxsLCJsdCI6ImRvd25sb2FkIiwicyI6IjY0ZWNhOWU3YzIyYTJmMjExOGEwNmYxM2I4NjQ0MTA5MDdlMjAwMDNjMmE4NDJiZjQ1ODY5NzY0NTliMDdjMThlMTM4ZDBiNWE3ZGNhMGI4ZDU2NDUwOTMyYjk1ZTE2MWUzZDgwNmY3ODM1NTAzZGY0Yzg4ZWJiMTRmYWQ1NmQ4IiwidCI6MTYyMTY5OTA3Miwic3RmcCI6ImVhNTNhMzdhNDA5NzAyYTM0MDJiODc1MzRmY2YzZjgyIiwic3RpcCI6Ijc3LjIwNC4yNDcuMTA5In0.lTaZtJEZgr59ukdDUXztO4SZneTsRk0KHrU-j0W0s7w/Sweet.tar.xz",
+    "archive_name": "Sweet.tar.xz"
+  },
+
+  "plasma_theme": {
+    "download_link": "https://dllb2.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2MTkwMTM5NDMiLCJ1IjpudWxsLCJsdCI6ImRvd25sb2FkIiwicyI6ImM4ZTEzZTE4YTlmZjhlNzAxNTExMWUyNDMyNzcxYWU2MzhmMTdlNWY1MWYyNzE3OWZmMTI0Yjc4MDA1MzZjZmJmMWIwYWM3OTU1MmUzZDljMTMxOTFkZTIxYzgzOTExMmEwY2ZjODhlNGIxNTk0MzQ5MTgwNzFkNDhmNjk3NGVlIiwidCI6MTYyMTY5ODY0MSwic3RmcCI6ImVhNTNhMzdhNDA5NzAyYTM0MDJiODc1MzRmY2YzZjgyIiwic3RpcCI6Ijc3LjIwNC4yNDcuMTA5In0.pwFy-nR254rcP6IpOzTP4V5_UvZOHcP7vAFax-HipBE/Layan.tar.gz",
+    "archive_name": "Layan.tar.xz"
+  },
+
+  "aurorae": {
+    "download_link": "https://dllb2.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE1OTM2MzMyMjAiLCJ1IjpudWxsLCJsdCI6ImRvd25sb2FkIiwicyI6ImEwMDRlODU4YjE2MDEyZTRmYzE1MGU5ZTQyZjE1ZWYzYmY2MDQzNmVkZjcxMjUxOTVhOGExNzdiZjk3NzkyZWM0ZDQzZjQzZDY2NTdlODdiODcwNDBhODdkNzBjZDkwNThkMGJlNTA5MWQ5MTczMGY3YmIyYmE0MDk3MDk5MjdjIiwidCI6MTYyMTY5OTE0OSwic3RmcCI6ImVhNTNhMzdhNDA5NzAyYTM0MDJiODc1MzRmY2YzZjgyIiwic3RpcCI6Ijc3LjIwNC4yNDcuMTA5In0.ptO1D7DAKj6_1Yh1OgrzHCPslGoTE3N7Fg-lbPszBis/Sweet.tar.xz",
+    "archive_name": "Sweet.tar.xz"
+  },
+
+  "icons": {
+    "download_link": "https://dllb2.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2MTk5MjY2MDciLCJ1IjpudWxsLCJsdCI6ImRvd25sb2FkIiwicyI6IjcxYTA2NjJhMGM0YTdlMDQyOTY3OTJlNmQ4NzFkNzdiMjhjMDlkMjFlZTdhYjY1ODhlMmM0MTBhYWM2NGMzYmIwNDJmMWZhMjg0MmY1YjJhNDA0NjdhNTg5NDRkNWJlNTE5MTE1OGVkYmYzOGJkMDlmNDgzZDkyZDRmMGVlNWY1IiwidCI6MTYyMTY5OTI0OSwic3RmcCI6ImVhNTNhMzdhNDA5NzAyYTM0MDJiODc1MzRmY2YzZjgyIiwic3RpcCI6Ijc3LjIwNC4yNDcuMTA5In0.ov5m9JVWUYAAlr6-2Z7O_od93zXnZDK0WoJa3_pce-A/papirus-icon-theme-20210501.tar.xz",
+    "archive_name": "papirus-icon-theme-20210501.tar.xz"
+  },
+
+  "wallpaper": {
+    "download_link": "https://dllb2.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE1ODk4NzY2NzAiLCJ1IjpudWxsLCJsdCI6ImRvd25sb2FkIiwicyI6ImUwZWY0ODA1OWRmYjk0YjRjYTNmZDA4MWNlNjA3MDBhYWRkMjExZjcwZTFjZjBmNDU1YmZhODgxYzJhODQwYmRmZDE4ZDRhZDkxZmY1ZWFlNjk4ZTQ1ZTQyMWI4NmM1OTNkMDllNWJhMmE2MGI0YjAzM2JhZGZhYzMxOTJkMmNjIiwidCI6MTYyMTY5OTMwNSwic3RmcCI6ImVhNTNhMzdhNDA5NzAyYTM0MDJiODc1MzRmY2YzZjgyIiwic3RpcCI6Ijc3LjIwNC4yNDcuMTA5In0.XYnen6rmbTbuwmDO-7g-Qx6S47lzoj2KoOxSvp-8uY4/Layan.tar.xz",
+    "archive_name": "Layan.tar.xz"
+  },
+
+  "sddmtheme": {
+    "download_link":"https://dllb2.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2MTkwMzE1ODAiLCJ1IjpudWxsLCJsdCI6ImRvd25sb2FkIiwicyI6ImIxOGRhYzlmYzQyNGE4MThiMDk4MDM1YTkwZjBhNGQ0NTYyZTA5Mjg5N2I3NWMwNTkyNzUwNWI2ZDQ0ZmFjNmFjYmE5NzlkYTFjYmI2NTg0MzgwY2U1ZmNkMDZhNmEwNzBhMGE0ZTNmM2Q5YmNmZjkzZjI2MThjYTA0MmQ2ZjMzIiwidCI6MTYyMTY5OTM1Nywic3RmcCI6ImVhNTNhMzdhNDA5NzAyYTM0MDJiODc1MzRmY2YzZjgyIiwic3RpcCI6Ijc3LjIwNC4yNDcuMTA5In0.56meUUCV005wEyBMf5Z-VyQd22AVkkkIujexfUkNMW4/Sweet.tar.xz",
+    "archive_name": "Sweet.tar.xz"
+  },
+
+  "xcursor": {
+    "download_link": "https://dllb2.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE1OTE5OTM4NTUiLCJ1IjpudWxsLCJsdCI6ImRvd25sb2FkIiwicyI6ImRhMTVjMmEyNGRkMmNhMjhiOWE3YjBmZmU2OWExNzliOTEyZmJhYzgzMWZmMmE0MTEzM2MzMDk0NjAxYTM4NzAzNzI4N2QwNWExZDBjNjkzODZlMzJkMDA1MzVhZmY4OTlmZDIzNzI0YzhmMTVjODkyMWUzNGZjOTFhZWZlNGExIiwidCI6MTYyMTY5OTQwNCwic3RmcCI6ImVhNTNhMzdhNDA5NzAyYTM0MDJiODc1MzRmY2YzZjgyIiwic3RpcCI6Ijc3LjIwNC4yNDcuMTA5In0.rXxnn1Bb5OhpxidzWqqoVL8RZBy69_6uUKGH5IwQh-0/Sweet-cursors.tar.xz",
+    "archive_name": "Sweet-cursors.tar.xz"
+  }
+}

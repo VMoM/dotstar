@@ -6,7 +6,6 @@ Encoding=UTF-8
 
 X-KDE-PluginInfo-Author=VMoM
 X-KDE-PluginInfo-Category=Plasma Look And Feel
-X-KDE-PluginInfo-Email=
 X-KDE-PluginInfo-EnabledByDefault=true
 X-KDE-PluginInfo-License=GPL3.0
 X-KDE-PluginInfo-Name=Sweet-Layan-mashup
@@ -14,5 +13,4 @@ X-KDE-PluginInfo-Version=0.1
 X-KDE-PluginInfo-Website=https://github.com/VMoM/dotstar/
 X-KDE-ServiceTypes=Plasma/LookAndFeel
 X-KDE-fallbackPackage=org.kde.breeze.desktop
-X-KPackage-Dependencies=kns://colorschemes.knsrc/api.kde-look.org/1294011,kns://plasma-themes.knsrc/api.kde-look.org/1325241,kns://aurorae.knsrc/api.kde-look.org/1286856,kns://icons.knsrc/api.kde-look.org/1166289,kns://wallpaper.knsrc/api.kde-look.org/1309218,kns://sddmtheme.knsrc/api.kde-look.org/1334945,kns://xcursor.knsrc/api.kde-look.org/1393084
 X-Plasma-MainScript=defaults
