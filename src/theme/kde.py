@@ -4,15 +4,8 @@ import json
 
 import ui
 
-# some user vars
-USER_HOME_PATH = os.popen("echo $HOME").read().strip() + "/"
-CONFIG_PATH = USER_HOME_PATH + ".config/"
-LOCAL_PATH = USER_HOME_PATH + ".local/"
+CURRENT_DIR_PATH = os.path.dirname(os.path.realpath(__file__))
 
-
-def read_json_dependencies(json_path: str) -> dict[str]:
-    with open(json_path, "r") as json_file:
-        return json.load(json_file)
 
 def install_kde_theme(theme_name: str, theme_folder_path: str) -> None:
     """
@@ -42,39 +35,11 @@ def install_kde_theme(theme_name: str, theme_folder_path: str) -> None:
             return
 
     # INSTALLATION OF THE DEPENDENCIES
-    theme_dependencies = read_json_dependencies(theme_folder_path + "/dependencies.json")
-    dependency_names = [
-        "colorscheme",
-        "plasma_theme",
-        "aurorae",
-        "icons",
-        "wallpaper",
-        # "sddmtheme", TODO find how to use
-        "xcursor"
-    ]
-    # TODO find where other dependencies are
-    dependency_paths = [
-        LOCAL_PATH + "share/color-schemes/",
-        LOCAL_PATH + "share/plasma/look-and-feel/",
-        LOCAL_PATH + "share/aurorae/themes/",
-        LOCAL_PATH + "share/icons/",
-        LOCAL_PATH + "share/wallpapers/",
-        # LOCAL_PATH + "sddm", TODO find how to use
-        LOCAL_PATH + "share/icons/"
-    ]
-    for i in range(len(dependency_names)):
-        ui.print_information("Installation of the %s" % dependency_names[i])
-        component_installation_command = (
-                "sh "
-                + os.path.dirname(__file__) + "/install_theme_components.sh"
-                + " " + theme_dependencies[dependency_names[i]]["download_link"]
-                + " " + theme_dependencies[dependency_names[i]]["archive_name"]
-                + " " + dependency_paths[i]
-        )
-        icon_installation_failed = bool(ui.exec_system(component_installation_command))
-        if icon_installation_failed:
-            ui.print_error("Error: impossible to install %s." % dependency_names[i])
-            return
+    ui.print_information("Installation of the dependencies...")
+    dependencies_installation_failed = bool(ui.exec_system("sh %s/install_theme_components.sh" % CURRENT_DIR_PATH))
+    if dependencies_installation_failed:
+        ui.print_error("Error: impossible to install all the needed dependencies.")
+        return
 
     ui.print_information("Installation of %s (the global theme)..." % theme_name)
     installation_command = "kpackagetool5 -i " + theme_folder_path
