@@ -66,7 +66,7 @@ def install_kde_theme(theme_name: str, theme_folder_path: str) -> None:
         ui.print_information("Installation of the %s" % dependency_names[i])
         component_installation_command = (
                 "sh "
-                + os.path.dirname(__file__) + "/install_theme_component.sh"
+                + os.path.dirname(__file__) + "/install_theme_components.sh"
                 + " " + theme_dependencies[dependency_names[i]]["download_link"]
                 + " " + theme_dependencies[dependency_names[i]]["archive_name"]
                 + " " + dependency_paths[i]
