@@ -1,6 +1,5 @@
 import subprocess  # for executing some commands
 import os
-import json
 
 import ui
 
@@ -41,6 +40,7 @@ def install_kde_theme(theme_name: str, theme_folder_path: str) -> None:
         ui.print_error("Error: impossible to install all the needed dependencies.")
         return
 
+    print()
     ui.print_information("Installation of %s (the global theme)..." % theme_name)
     installation_command = "kpackagetool5 -i " + theme_folder_path
     installation_failed = bool(ui.exec_system(installation_command))
@@ -50,7 +50,7 @@ def install_kde_theme(theme_name: str, theme_folder_path: str) -> None:
         return
 
     ui.print_information("Global theme successfully installed.")
-    ui.print_information("Setting the theme...")
+    ui.print_information("Setting the theme... (some QDBusConnection errors can span but they aren't serious)")
 
     setting_the_theme_command = "lookandfeeltool --apply " + theme_name
     setting_failed = bool(ui.exec_system(setting_the_theme_command))

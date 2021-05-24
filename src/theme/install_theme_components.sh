@@ -18,12 +18,16 @@ cd "$MAIN_FOLDER_NAME" || echo "Error: impossible to access to /tmp/$MAIN_FOLDER
 
 
 # SWEET COMPONENTS
+echo "Beginning the Sweet part..."
 # getting Sweet from GitHub
+echo "Downloading the Sweet theme from GitHub..."
 SWEET_ARCHIVE_NAME="Sweet-nova.tar.gz"
 SWEET_FOLDER_NAME="Sweet-nova"
 readonly SWEET_ARCHIVE_NAME
 readonly SWEET_FOLDER_NAME
-wget https://github.com/EliverLara/Sweet/archive/nova.tar.gz --output-document="$SWEET_ARCHIVE_NAME" || echo "Error: impossible to get the Sweet theme archive from GitHub. Exiting." || exit 1
+wget https://github.com/EliverLara/Sweet/archive/nova.tar.gz --output-document="$SWEET_ARCHIVE_NAME" --no-verbose --show-progress || echo "Error: impossible to get the Sweet theme archive from GitHub. Exiting." || exit 1
+echo "Downloading the Sweet theme from GitHub: done."
+echo "Installing the Sweet components..."
 # decompressing Sweet
 tar -xf "$SWEET_ARCHIVE_NAME" || echo "Error: impossible to extract the Sweet theme archive. Exiting." || exit 1
 # removing the archive
@@ -37,16 +41,23 @@ cp "colorschemes/Sweet.colors" "$USER_SHARE_PATH/color-schemes/"
 cp -r "cursors/Sweet-cursors" "$USER_SHARE_PATH/icons/"
 # installing sddm
 # TODO find where put it
+# Sweet components installed
+echo "Installing the Sweet components: done."
+echo "Sweet part finished."
 
 
 # Layan components
+echo "Beginning the Layan part..."
+echo "Downloading the Layan theme from GitHub..."
 cd "/tmp/$MAIN_FOLDER_NAME/" || echo "Error: impossible to return to /tmp/$MAIN_FOLDER_NAME/. Exiting." || exit 1
 # getting Layan from GitHub
 LAYAN_ARCHIVE_NAME="Layan-master.tar.gz"
 LAYAN_FOLDER_NAME="Layan-kde-master"
 readonly LAYAN_ARCHIVE_NAME
 readonly LAYAN_FOLDER_NAME
-wget https://github.com/vinceliuice/Layan-kde/archive/master.tar.gz --output-document="$LAYAN_ARCHIVE_NAME" || echo "Error: impossible to get the Layan theme archive from GitHub. Exiting." || exit 1
+wget https://github.com/vinceliuice/Layan-kde/archive/master.tar.gz --output-document="$LAYAN_ARCHIVE_NAME" --no-verbose --show-progress || echo "Error: impossible to get the Layan theme archive from GitHub. Exiting." || exit 1
+echo "Downloading the Layan theme from GitHub: done."
+echo "Installing the Layan components..."
 # decompressing Layan
 tar -xf "$LAYAN_ARCHIVE_NAME" || echo "Error: impossible to extract the Layan theme archive. Exiting." || exit 1
 # removing the archive
@@ -57,16 +68,22 @@ cp -r "plasma/desktoptheme/Layan/" "$USER_SHARE_PATH/plasma/desktoptheme/"
 cp -r "plasma/desktoptheme/icons/" "$USER_SHARE_PATH/plasma/desktoptheme/Layan/"
 # wallpaper
 cp -r "wallpaper/Layan/" "$USER_SHARE_PATH/wallpapers/"
-
+# Layan components installed
+echo "Installing the Layan components: done."
+echo "Layan part finished."
 
 # Papirus (icons)
+echo "Beginning the Papirus part..."
+echo "Downloading the Papirus icon theme from GitHub..."
 cd "/tmp/$MAIN_FOLDER_NAME/" || echo "Error: impossible to return to /tmp/$MAIN_FOLDER_NAME/. Exiting." || exit 1
 # getting Papirus from GitHub
 PAPIRUS_ARCHIVE_NAME="Papirus-master.tar.gz"
 PAPIRUS_FOLDER_NAME="papirus-icon-theme-master"
 readonly PAPIRUS_ARCHIVE_NAME
 readonly PAPIRUS_FOLDER_NAME
-wget https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/archive/master.tar.gz --output-document="$PAPIRUS_ARCHIVE_NAME" || echo "Error: impossible to get the Layan theme archive from GitHub. Exiting." || exit 1
+wget https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/archive/master.tar.gz --output-document="$PAPIRUS_ARCHIVE_NAME" --no-verbose --show-progress || echo "Error: impossible to get the Layan theme archive from GitHub. Exiting." || exit 1
+echo "Downloading the Papirus icon theme: done"
+echo "Installing the Papirus icon theme..."
 # decompressing Papirus
 tar -xf "$PAPIRUS_ARCHIVE_NAME" || echo "Error: impossible to extract the Layan theme archive. Exiting." || exit 1
 # removing the archive
@@ -74,5 +91,7 @@ rm "$PAPIRUS_ARCHIVE_NAME"
 cd "$PAPIRUS_FOLDER_NAME" || echo "Error: impossible to enter on $LAYAN_FOLDER_NAME/. Exiting." || exit 1
 # installing icons
 cp -r "Papirus/" "$USER_SHARE_PATH/icons/"
+echo "Installing the Papirus icon theme: done."
+echo "Papirus part finished."
 
 exit 0
